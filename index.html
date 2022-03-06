@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- bai1 -->
+    <section class="stopwatch watch">
+      <h2>Stopwatch</h2>
+        <div class="numbers">
+          <p class="number1">00:00:00</p>
+        </div>
+        <div class="buttons d-flex justify-content-around">
+            <button class="btn-start start">Start</button>  
+            <button class="btn-reset reset">Reset</button>
+        </div>
+    </section>
+    <!-- bai2 -->
+    <section class="countdown watch">
+      <h2>Countdown</h2>
+      <div class="numbers">
+        <p class="number2">00:00:00</p>
+      </div>
+      <div class="buttons justify-content-around">
+        <button class="btn-start startcoundown" onclick="Startcoundown()">Start</button>  
+        <button class="btn-reset" onclick="clearCoundown()">Reset</button>
+      </div>
+      <div class="setCoundown">
+          <div class="top mb-3">
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <input type="button" value="Set" onclick="setCoundown()" />
+          </div>
+          <div class="bottom">
+            <button>0</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <input type="button" value="Clear" onclick="clearNumber()"/>  
+          </div>
+      </div>
+      <div class="back mt-3" style="float:left;">
+        <button class="btn-back btn-primary btn">Back</button>
+      </div>
+    </section>
+
+    <!-- bai3 -->
+    <div class="root my-5">
+      <h2>Bai 3</h2>
+      <table border="solid">
+        <tr>
+          <th>Họ Tên</th>
+          <th>Email</th>
+          <th>Ngày Sinh</th>
+          <th>Địa Chỉ</th>
+          <th>Số Điện Thoại</th>
+        </tr>
+        <tbody id="content">
+          
+        </tbody>
+    </body>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
